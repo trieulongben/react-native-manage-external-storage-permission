@@ -1,0 +1,1 @@
+# react-native-manage-external-storage-permission

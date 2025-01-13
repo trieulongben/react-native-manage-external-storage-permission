@@ -54,7 +54,7 @@
     "type": "git",
     "url": "git+https://github.com/trieulongben/react-native-manage-external-storage-permission.git"
   },
-  "author": "benjamin.le <trieulong.le2206@gmail.com> (https://github.com/LongLe2206VN)",
+  "author": "trieulongben <benjamin.le2206@gmail.com> (https://github.com/trieulongben)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/trieulongben/react-native-manage-external-storage-permission/issues"

@@ -1,12 +1,20 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-manage-external-storage-permission';
-
-const result = multiply(3, 7);
+import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
+import { requestExternalStoragePermission } from 'react-native-manage-external-storage-permission';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <TouchableOpacity
+        onPress={() => {
+          requestExternalStoragePermission().then((permission) => {
+            console.log('Permission:', permission);
+          }).catch((e) => {
+            console.log('Error:', e);
+          });
+        }}
+      >
+        <Text>Get Permission</Text>
+      </TouchableOpacity>
     </View>
   );
 }
